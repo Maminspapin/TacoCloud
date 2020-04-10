@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @Repository
-public class JdbcIngredientRepository implements IngridientRepository {
+public class JdbcIngredientRepository implements IngredientRepository {
 
     private JdbcTemplate jdbc;
 
