@@ -1,11 +1,12 @@
-package tacos;
+package tacos.starter;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import tacos.data.IngredientRepository;
-import tacos.Ingredient.Type;
+import tacos.entity.Ingredient;
+import tacos.entity.Ingredient.Type;
 
 @SpringBootApplication
 public class TacoCloudApplication {

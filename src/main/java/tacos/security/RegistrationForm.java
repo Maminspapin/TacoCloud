@@ -1,7 +1,7 @@
 package tacos.security;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
-import tacos.User;
+import tacos.entity.User;
 
 public class RegistrationForm {
 

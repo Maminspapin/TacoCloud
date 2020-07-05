@@ -1,4 +1,4 @@
-package tacos;
+package tacos.entity;
 
 import lombok.AccessLevel;
 import lombok.Data;

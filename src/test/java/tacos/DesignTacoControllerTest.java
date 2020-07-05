@@ -22,10 +22,12 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import tacos.Ingredient.Type;
+import tacos.entity.Ingredient;
+import tacos.entity.Ingredient.Type;
 import tacos.data.IngredientRepository;
 import tacos.data.OrderRepository;
 import tacos.data.TacoRepository;
+import tacos.entity.Taco;
 import tacos.web.DesignTacoController;
 
 @RunWith(SpringRunner.class)
