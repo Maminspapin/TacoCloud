@@ -11,7 +11,7 @@ import tacos.web.UserRepository;
 @Service
 public class UserRepositoryUserDetailService implements UserDetailsService {
 
-    private UserRepository userRepo;
+    private final UserRepository userRepo;
 
     @Autowired
     public UserRepositoryUserDetailService(UserRepository userRepo) {
