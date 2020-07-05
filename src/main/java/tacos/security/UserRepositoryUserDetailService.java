@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import tacos.User;
-import tacos.web.UserRepository;
+import tacos.data.UserRepository;
 
 @Service
 public class UserRepositoryUserDetailService implements UserDetailsService {
