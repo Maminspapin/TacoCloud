@@ -1,4 +1,4 @@
-package tacos.starter;
+package tacos;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
