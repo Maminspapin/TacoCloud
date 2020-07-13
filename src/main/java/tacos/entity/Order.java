@@ -2,11 +2,12 @@ package tacos.entity;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
+import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
 import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
 @Data
 @Table(name = "Taco_Order")
 @Entity
-public class Order {
+public class Order implements Serializable {
 
     private static final Long serialVersionUID = 1L;
 
@@ -23,6 +24,9 @@ public class Order {
     private Long id;
 
     private Date placedAt;
+
+    @ManyToOne
+    private User user;
 
     @NotBlank(message = "Name is required")
     private String name;
